@@ -3,6 +3,10 @@ spring:
     name: eureka-server
 
 eureka:
+  instance:
+    hostname: mesus-eureka.herokuapp.com
   client:
     register-with-eureka: false
     fetch-registry: false
+  server:
+    enableSelfPreservation: false
